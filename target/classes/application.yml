@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.xugu.cloudjdbc.Driver
+    url: jdbc:xugu://192.168.2.44:5138/XUGUYUN
+    username: USR_TEST
+    password: 1qaz@WSX
+  jpa:
+    database-platform: com.xugu.dialect.XuguDialect4
+    hibernate:
+      ddl-auto: create-drop #create update validate
+    show-sql: true

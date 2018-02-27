@@ -1,0 +1,107 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_Role",
+      "name": "T_Role",
+      "type": "com.ongoing.xuguyun.login.DAO.T_Role"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User",
+      "type": "com.ongoing.xuguyun.login.DAO.T_User"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser",
+      "type": "com.ongoing.xuguyun.login.DAO.V_LoginUser"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_Role",
+      "name": "T_Role.role-desc",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_Role",
+      "name": "T_Role.role-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_Role",
+      "name": "T_Role.role-type",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_Role",
+      "name": "T_Role.role-u-r-l",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.role-type",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-desc",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-email",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-i-d",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-mobel",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-phone",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.T_User",
+      "name": "T_User.user-pwd",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser.role-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser.role-u-r-l",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser.user-email",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser.user-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ongoing.xuguyun.login.DAO.V_LoginUser",
+      "name": "V_LoginUser.user-pwd",
+      "type": "java.lang.String"
+    }
+  ]
+}

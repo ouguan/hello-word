@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<!-- 定义全局变量 -->
+		<!-- #测试：-Dlog.level.console=warn -Dlog.level.xjj=trace -->
+		<!-- #生产：-Dlog.level.console=warn -Dlog.level.xjj=info -->
+		<!-- 日志级别：trace<debug<info<warn<error<fatal -->
+		<!-- Property name="PID">????</Property>  -->
+		<!-- “sys:”表示：如果VM参数中没指定这个变量值，则使用本文件中定义的缺省全局变量值   -->
+		<Property name="PROJECT_NAME">xuguyun</Property>
+		<Property name="LOG_PATH">${sys:PROJECT_NAME}/src/main/resources/logs</Property>
+		<Property name="LOG_FILE">${sys:PROJECT_NAME}.log</Property>
+		<Property name="LOG_EXCEPTION_CONVERSION_WORD">%xwEx</Property>
+		<Property name="LOG_LEVEL_PATTERN">%6p</Property>
+		<Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} |${LOG_LEVEL_PATTERN}| ${sys:PROJECT_NAME} --- [%thread] %c : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}</Property>
+		<Property name="LEVEL_INFO">INFO</Property>
+		<Property name="LEVEL_DEBUG">DEBUG</Property>
+		<Property name="LEVEL_ERROR">ERROR</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT" follow="true">
+		    <ThresholdFilter>
+		       <level>${LEVEL_DEBUG}</level>
+		       <onMatch>ACCEPT</onMatch>
+		       <onMismatch>DENY</onMismatch>
+		    </ThresholdFilter>
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+		<RollingFile name="File" fileName="logs/${sys:LOG_FILE}" filePattern="logs/$${date:yyyy-MM}/${sys:PROJECT_NAME}-%d{yyyy-MM-dd-HH}_%i.log.gz">
+			<PatternLayout charset="UTF-8">
+				<Pattern>${LOG_PATTERN}</Pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="1 MB" />
+			</Policies>
+			<DefaultRolloverStrategy>
+			    <max>1000</max>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<!-- <logger>
+		    <name>com.ongoing.xuguyun.login.DAO</name>
+		    <level>warn</level>
+		    <AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</logger>  -->
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

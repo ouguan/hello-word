@@ -1,0 +1,11 @@
+____  ___        ________        _____.___.             
+\   \/  /__ __  /  _____/ __ __  \__  |   |__ __  ____  
+ \     /|  |  \/   \  ___|  |  \  /   |   |  |  \/    \ 
+ /     \|  |  /\    \_\  \  |  /  \____   |  |  /   |  \
+/___/\  \____/  \______  /____/   / ______|____/|___|  /
+      \_/              \/         \/                 \/ 
+      www.xugucn.com            ${spring-boot.version}
+
+${AnsiColor.BLACK}
+Application Version: ${application.version}${application.formatted-version}
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

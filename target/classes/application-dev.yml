@@ -1,0 +1,19 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: admin    
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html; charset=utf-8
+logging:
+  config: classpath:log4j2-dev.xml 
